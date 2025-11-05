@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산방식당,제주산방식당</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 / 내비게이션 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="#home">
+                        <img 
+                            src="https://media.sanbangjeju.com/%EC%82%B0%EB%B0%A9%EC%8B%9D%EB%8B%B9%20%EB%A1%9C%EA%B3%A0_%EB%B0%B0%EA%B2%BD%EC%A0%9C%EA%B1%B0.png" 
+                            alt="산방식당 로고" 
+                            class="logo-img"
+                        >
+                    </a>
+                </div>
+
+                <!-- 데스크톱 메뉴 -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#story" class="nav-link">브랜드 스토리</a></li>
+                    <li><a href="#philosophy" class="nav-link">철학</a></li>
+                    <li><a href="#menu-solution-partner" class="nav-link">메뉴 솔루션</a></li>
+                    <li><a href="#premium-track" class="nav-link">프리미엄 트랙</a></li>
+                    <li><a href="#hmr" class="nav-link">HMR</a></li>
+                    <li><a href="#contact" class="nav-link">문의하기</a></li>
+                    <li>
+                        <a href="#contact" class="nav-cta-btn">파트너십 문의</a>
+                    </li>
+                </ul>
+
+                <!-- 모바일 햄버거 버튼 -->
+                <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- 모바일 오버레이 메뉴 -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <div class="mobile-menu">
+                <button class="mobile-close" id="mobileClose" aria-label="메뉴 닫기">×</button>
+                <ul class="mobile-nav-menu">
+                    <li><a href="#story" class="mobile-nav-link">브랜드 스토리</a></li>
+                    <li><a href="#philosophy" class="mobile-nav-link">철학</a></li>
+                    <li><a href="#menu-solution-partner" class="mobile-nav-link">메뉴 솔루션</a></li>
+                    <li><a href="#premium-track" class="mobile-nav-link">프리미엄 트랙</a></li>
+                    <li><a href="#hmr" class="mobile-nav-link">HMR</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">문의하기</a></li>
+                    <li>
+                        <a href="#contact" class="mobile-nav-cta-btn">파트너십 문의</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="home">
+        <!-- 배경 영상 -->
+        <div class="hero-video-container">
+            <video 
+                class="hero-video" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                poster="https://media.sanbangjeju.com/[제주산방식당] 비빔밀냉면_이미지1 (1).JPG"
+            >
+                <source src="https://media.sanbangjeju.com/제주산방식당 영상촬영분.mp4" type="video/mp4">
+                <!-- 영상 로드 실패 시 포스터 이미지 표시 -->
+                <img src="https://media.sanbangjeju.com/[제주산방식당] 비빔밀냉면_이미지1 (1).JPG" alt="산방식당 비빔밀냉면">
+            </video>
+            <!-- 브랜드 블루 오버레이 -->
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- 히어로 콘텐츠 -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- 헤드라인 -->
+                <h1 class="hero-headline">
+                    55년의 검증된 맛과 가치,<br class="desktop-break">지금 당신의 매장으로.
+                </h1>
+                
+                <!-- 서브카피 1 -->
+                <p class="hero-subcopy-1">
+                    1971년 제주 모슬포에서 시작된 한 그릇의 역사.
+                </p>
+                
+                <!-- 서브카피 2 -->
+                <p class="hero-subcopy-2">
+                    가맹이 아닌 협업으로, 성공의 무기를 만드세요.
+                </p>
+                
+                <!-- 보조 라인 -->
+                <p class="hero-auxiliary">
+                    55년 간 손님이 증명한 맛 공식, 이제 당신에게 전해집니다.
+                </p>
+            </div>
+
+            <!-- CTA 버튼 -->
+            <div class="hero-cta">
+                <a href="#menu-solution-partner" class="cta-btn cta-btn-primary">메뉴 솔루션 알아보기</a>
+                <a href="#contact" class="cta-btn cta-btn-secondary">프리미엄 제안 받기</a>
+            </div>
+        </div>
+
+        <!-- 스크롤 유도 인디케이터 -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 섹션 2: 브랜드 스토리 -->
+    <section class="story-section" id="story">
+        <div class="story-container">
+            <!-- 섹션 타이틀 -->
+            <div class="story-header">
+                <h2 class="story-title">1971년 모슬포, 한 그릇의 시작.</h2>
+                <p class="story-subtitle">55년 동안 한 메뉴로 쌓은 신뢰, 그 노하우가 지금의 '산방식당 시스템'을 만들었습니다.</p>
+            </div>
+
+            <!-- 메인 카피 섹션 -->
+            <div class="story-main-copy">
+                <div class="main-copy-content">
+                    <h3 class="main-copy-title">55년 동안, 단 한 가지를 지켜왔습니다.</h3>
+                    <p class="main-copy-text">
+                        매일 새벽, 같은 방식으로 끓인 육수.<br>
+                        변하지 않는 한 그릇의 진심이 오늘의 산방식당을 만들었습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-section">
+                <div class="timeline-container">
+                    <!-- 타임라인 아이템 1: 1971 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">1971</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">모슬포 본점 개업</h4>
+                            <p class="timeline-description">제주 최남단 대정읍 모슬포에서 시작된 한 그릇의 역사</p>
+                            <div class="timeline-image">
+                                <img 
+                                    src="https://media.sanbangjeju.com/[제주산방식당] 비빔밀냉면_이미지1 (1).JPG" 
+                                    alt="산방식당 모슬포 본점"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 타임라인 아이템 2: 2012 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2012</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">산방식당 제주점 오픈</h4>
+                            <p class="timeline-description">2대에 걸쳐 산방식당 제주점 오픈</p>
+                            <div class="timeline-image">
+                                <img 
+                                    src="https://media.sanbangjeju.com/산방식당 제주점 (3).JPG" 
+                                    alt="산방식당 제주점"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 타임라인 아이템 3: 2019 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">서울상공회의소점 오픈</h4>
+                            <p class="timeline-description">육지 첫 매장 서울상공회의소점 오픈</p>
+                            <div class="timeline-image">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/산방식당_상공회의소점.png" 
+                                    alt="산방식당 상공회의소점"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 타임라인 아이템 4: 2022 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">B2B 공급 및 밀키트 오픈</h4>
+                            <p class="timeline-description">산방식당 B2B 공급 및 밀키트 오픈</p>
+                            <div class="timeline-image-grid">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/CJ프레쉬웨이SNS.png" 
+                                    alt="CJ프레쉬웨이 공급"
+                                    loading="lazy"
+                                >
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EB%B0%80%ED%82%A4%ED%8A%B8%EB%A9%B4%EA%B3%BC%EC%96%91%EB%85%90%EC%9E%A5%EB%A7%8C.jpg" 
+                                    alt="밀키트 면과 양념장"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 연혁 이미지 -->
+                <div class="history-image-section">
+                    <img 
+                        src="https://media2.sanbangjeju.com/산방식당연혁-2.jpg" 
+                        alt="산방식당 연혁"
+                        class="history-image"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+
+            <!-- 브랜드 DNA 섹션 -->
+            <div class="brand-dna-section">
+                <div class="brand-dna-content">
+                    <div class="brand-dna-image">
+                        <img 
+                            src="https://media2.sanbangjeju.com/%EB%B0%98%EC%84%B8%EA%B8%B0%20%EC%A0%84%ED%86%B5%EC%9D%B4%20%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%A1%9C%20%EC%97%B0%EA%B2%B0%EB%90%A9%EB%8B%88%EB%8B%A4..png" 
+                            alt="반세기 전통이 당신의 브랜드로 연결됩니다"
+                            loading="lazy"
+                            style="width:100%;border-radius:8px;"
+                        >
+                    </div>
+                    <div class="brand-dna-image">
+                        <img 
+                            src="https://media.sanbangjeju.com/제주산방식당_소묘%20(1).jpg" 
+                            alt="산방식당 창업자"
+                            loading="lazy"
+                            style="width:100%;border-radius:8px;"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- 시그니처 메뉴 섹션 -->
+            <div class="signature-menu-section">
+                <h3 class="signature-menu-title">산방식당 메뉴</h3>
+                <div class="signature-menu-grid">
+                    <div class="menu-item">
+                        <img 
+                            src="https://media2.sanbangjeju.com/밀냉면멘트포함.jpg" 
+                            alt="밀냉면"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="menu-item">
+                        <img 
+                            src="https://media2.sanbangjeju.com/비빔밀냉면멘트포함.jpg" 
+                            alt="비빔밀냉면"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="menu-item">
+                        <img 
+                            src="https://media2.sanbangjeju.com/수육멘트포함.jpg" 
+                            alt="수육"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 3: 철학 -->
+    <section class="philosophy-section" id="philosophy">
+        <div class="philosophy-container">
+            <!-- 섹션 헤더 -->
+            <div class="philosophy-header">
+                <h2 class="philosophy-title">메뉴 솔루션 파트너, 당신의 성공을 위한 협업</h2>
+                <p class="philosophy-subtitle">
+                    산방식당이 55년 동안 지켜온 맛의 노하우를 당신의 브랜드에 전수합니다.
+                </p>
+            </div>
+
+            <!-- 메인 카피 -->
+            <div class="philosophy-main-copy">
+                <blockquote class="philosophy-quote">
+                    우리는 레시피를 전수하는 것을 넘어,<br class="desktop-break">
+                    당신의 성공을 함께 만들어갑니다.
+                </blockquote>
+            </div>
+
+            <!-- 4가지 베네핏 카드 -->
+            <div class="philosophy-cards-grid">
+                <!-- 카드 1: 검증된 레시피 -->
+                <div class="philosophy-card">
+                    <div class="philosophy-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.7088 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="philosophy-card-title">검증된 레시피</h3>
+                    <p class="philosophy-card-description">
+                        55년간 검증된 산방식당의 맛 공식 전수
+                    </p>
+                </div>
+
+                <!-- 카드 2: 운영 노하우 -->
+                <div class="philosophy-card">
+                    <div class="philosophy-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="philosophy-card-title">운영 노하우</h3>
+                    <p class="philosophy-card-description">
+                        반세기 동안 쌓아온 효율적인 운영 시스템
+                    </p>
+                </div>
+
+                <!-- 카드 3: 브랜드 협업 -->
+                <div class="philosophy-card">
+                    <div class="philosophy-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="philosophy-card-title">브랜드 협업</h3>
+                    <p class="philosophy-card-description">
+                        함께 성장하는 신뢰 기반의 파트너십
+                    </p>
+                </div>
+
+                <!-- 카드 4: 성공의 기억 -->
+                <div class="philosophy-card">
+                    <div class="philosophy-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="philosophy-card-title">성공의 기억</h3>
+                    <p class="philosophy-card-description">
+                        당신의 시그니처 메뉴가 될 레시피 전수
+                    </p>
+                </div>
+            </div>
+
+            <!-- 보조 문장 -->
+            <div class="philosophy-footer">
+                <p class="philosophy-tagline">
+                    맛의 일관성, 운영의 진심, 협업의 신뢰.<br class="desktop-break">
+                    산방식당의 노하우가 당신의 브랜드 가치를 높입니다.
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div class="philosophy-cta">
+                <a href="#contact" class="philosophy-cta-link">
+                    메뉴 솔루션 알아보기 <span class="cta-arrow">↓</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 4: 메뉴 솔루션 파트너 -->
+    <section class="menu-solution-section" id="menu-solution-partner">
+        <div class="menu-solution-container">
+            <!-- 섹션 헤더 -->
+            <div class="menu-solution-header">
+                <h2 class="menu-solution-title">가맹이 아닌 협업, 메뉴 솔루션 파트너.</h2>
+                <p class="menu-solution-subtitle">
+                    산방식당의 검증된 레시피와 운영 노하우를<br class="desktop-break">
+                    당신의 메뉴에 자유롭게 적용하세요.
+                </p>
+            </div>
+
+            <!-- 메인 콘텐츠 영역 -->
+            <div class="menu-solution-content">
+                <!-- 1. 문제 인식 섹션 - 전체 너비 -->
+                <div class="problem-recognition-cards">
+                    <h3 class="problem-title">이런 고민이 있으신가요?</h3>
+                    <div class="problem-card-grid">
+                        <div class="problem-card">
+                            <div class="problem-card-icon">✗</div>
+                            <div class="problem-card-text">시판 소스의 한계로<br>맛의 차별화가 어려워요</div>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-card-icon">✗</div>
+                            <div class="problem-card-text">메뉴의 일관성을<br>유지하기 어려워요</div>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-card-icon">✗</div>
+                            <div class="problem-card-text">두 번째 시그니처<br>메뉴가 필요해요</div>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-card-icon">✗</div>
+                            <div class="problem-card-text">체계적인 레시피<br>교육이 부재해요</div>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-card-icon">✗</div>
+                            <div class="problem-card-text">브랜드 의존도가<br>높아 부담스러워요</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 가치 문장 섹션 - 전체 너비 -->
+                <div class="value-statement">
+                    <h3 class="value-title">간판이 아닌 무기를 만드세요.</h3>
+                    <p class="value-description">
+                        산방식당의 55년 노하우를 당신의 메뉴에 자유롭게 녹여<br class="desktop-break">
+                        독보적인 시그니처를 만들어가세요.
+                    </p>
+                </div>
+
+                <!-- 3. 메뉴 설명 + 이미지 - 전체 너비 -->
+                <div class="menu-solution-menu-intro">
+                    <div class="menu-solution-menu-copy">
+                        이 모든 메뉴는 산방식당의 육수, 비빔장, 소스 등으로 구성되어 있으며,<br class="desktop-break">
+                        현재 매장에서 대기를 이룰 만큼 많은 고객분들이 찾아주고 계십니다.
+                    </div>
+                    <div class="menu-solution-menu-copy-image" style="margin-bottom:2.5rem;">
+                        <img 
+                            src="https://media.sanbangjeju.com/18_%EC%A4%84%EC%84%9C%EA%B8%B03.gif" 
+                            alt="상공회의소맛집,시청역맛집" 
+                            loading="lazy"
+                            style="max-width:840px; width:100%; display:block; border-radius:12px; box-shadow:0 3px 18px rgba(40,58,77,0.13);" 
+                        >
+                    </div>
+                </div>
+
+                <!-- 4. 메뉴 제안 예시 - '우리가 너를 채우는 게 아니라, 너의 메뉴를 돋보이게 하는 제안' 강조 -->
+                <div class="menu-solution-menu-grid">
+                    <!-- End of Selection -->
+```
+                    <div class="menu-grid-row">
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EB%A7%8C%EB%91%90%EC%98%A8%EB%A9%B4%20%EA%B4%91%EA%B3%A0%20.jpg" 
+                                    alt="만두온면" 
+                                    loading="lazy"
+                                    decoding="async"
+                                    fetchpriority="high"
+                                >
+                            </div>
+                            <div class="menu-menu-label">만두온면</div>
+                        </div>
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EA%B3%A0%EA%B8%B0%EA%B5%AD%EC%88%98%EB%A9%98%ED%8A%B8%ED%8F%AC%ED%95%A8.jpg" 
+                                    alt="고기국수" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">고기국수</div>
+                        </div>
+                    </div>
+                    <div class="menu-grid-row">
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EA%B9%80%EC%B9%98%EC%B0%8C%EA%B0%9C%EB%A9%98%ED%8A%B8%ED%8F%AC%ED%95%A8.jpg" 
+                                    alt="김치찌개" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">김치찌개</div>
+                        </div>
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EB%A7%8C%EB%91%A3%EA%B5%AD.jpg" 
+                                    alt="만둣국" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">만둣국</div>
+                        </div>
+                    </div>
+                    <div class="menu-grid-row">
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EC%97%AC%EC%9D%98%EB%8F%84%EA%B3%A0%EA%B8%B0%EB%8D%AE%EB%B0%A5.JPG" 
+                                    alt="고기덮밥" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">고기덮밥</div>
+                        </div>
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EC%97%AC%EC%9D%98%EB%8F%84%EB%82%99%EC%A7%80.jpg" 
+                                    alt="낙지비빔밥" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">낙지비빔밥</div>
+                        </div>
+                    </div>
+                    <div class="menu-grid-row">
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EC%82%B0%EB%B0%A9%EB%A7%8C%EB%91%90%EB%A9%98%ED%8A%B8%ED%8F%AC%ED%95%A8.jpg" 
+                                    alt="육즙가득만두" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">육즙가득만두</div>
+                        </div>
+                        <div class="menu-grid-item">
+                            <div class="menu-menu-image-wrap">
+                                <img 
+                                    src="https://media2.sanbangjeju.com/%EC%88%98%EC%9C%A1%EB%A9%98%ED%8A%B8%ED%8F%AC%ED%95%A8.jpg" 
+                                    alt="수육 보쌈" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </div>
+                            <div class="menu-menu-label">수육 보쌈</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 정책 카드 섹션 -->
+                <div class="policy-section in-view">
+                    <div class="policy-cards">
+                        <div class="policy-card">
+                            <div class="policy-icon">NO</div>
+                            <h4 class="policy-card-title">NO 가맹비</h4>
+                            <p class="policy-card-description">부담 없이 시작하세요</p>
+                        </div>
+                        <div class="policy-card">
+                            <div class="policy-icon">NO</div>
+                            <h4 class="policy-card-title">NO 로열티</h4>
+                            <p class="policy-card-description">매출은 전부 당신의 몫</p>
+                        </div>
+                        <div class="policy-card">
+                            <div class="policy-icon">NO</div>
+                            <h4 class="policy-card-title">NO 계약기간</h4>
+                            <p class="policy-card-description">자유로운 협업 종료</p>
+                        </div>
+                        <div class="policy-card">
+                            <div class="policy-icon">NO</div>
+                            <h4 class="policy-card-title">NO 인테리어 강제</h4>
+                            <p class="policy-card-description">당신의 개성 유지</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 비용 및 보장 섹션 -->
+                <div class="cost-guarantee-section">
+                    <div class="cost-guarantee-card">
+                        <div class="cost-info">
+                            <h4 class="cost-title">초기 세팅 교육비</h4>
+                            <p class="cost-amount">300만원</p>
+                            <p class="cost-note">(실습 포함)</p>
+                        </div>
+                        <div class="guarantee-info">
+                            <h4 class="guarantee-title">100% 환불 보장</h4>
+                            <p class="guarantee-description">
+                                2개월 내 부적합 시<br>
+                                실비 제외 100% 환불
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 역량 소개 -->
+            <!-- End of Selection -->
+
+
+            <!-- CTA 영역 -->
+            <div class="menu-solution-cta">
+                <a href="#contact" class="menu-solution-cta-btn">
+                    지금 바로 상담하고, 당신의 두 번째 시그니처를 만드세요.
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 5: 공식 브랜드 파트너 -->
+    <section class="premium-track-section" id="premium-track">
+        <div class="premium-track-container">
+            <!-- 섹션 전체 헤더 -->
+            <div class="premium-track-main-header">
+                <h2 class="premium-track-main-title">공식 브랜드 파트너</h2>
+            </div>
+
+            <!-- 서브섹션 그리드: 5-1 콜라보 + 5-2 B2B -->
+            <div class="partner-subsection-grid">
+                <!-- 5-1: 산방식당과의 콜라보 -->
+                <div class="collaboration-subsection">
+                    <div class="collaboration-content">
+                        <h3 class="collaboration-title">당신의 브랜드와 함께, 새로운 메뉴와 이야기를 만듭니다.</h3>
+                        <p class="collaboration-description">
+                            브랜드 콜라보와 공식 네이밍/캠페인을 통해<br class="desktop-break">
+                            함께 성장하는 파트너십을 만들어갑니다.
+                        </p>
+                        <div class="collaboration-visual">
+                            <img 
+                                src="https://media.sanbangjeju.com/[제주산방식당] 비빔밀냉면_이미지1 (1).JPG" 
+                                alt="산방식당 브랜드 콜라보"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="collaboration-cta">
+                            <a href="#contact" class="collaboration-cta-btn">브랜드 콜라보 문의하기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5-2: B2B 기업급식 · 단체주문 -->
+                <div class="b2b-subsection" id="b2b">
+                    <div class="b2b-content">
+                        <h3 class="b2b-title">
+                            기업 급식에도, 제주 산방식당의 노하우를 그대로.
+                        </h3>
+                        <p class="b2b-subtitle">
+                            '검증된 맛'과 '스토리'가 있는 한 끼는 단순한 식사가 아닌<br class="desktop-break">
+                            <strong>특별한 복지(Welfare)</strong>가 됩니다.
+                        </p>
+                        <p class="b2b-description">
+                            표준화된 육수·비빔장 시스템으로 일관된 맛 제공.<br class="desktop-break">
+                            학교·기업·공공기관 단체 급식 및 대량 납품 가능.<br class="desktop-break">
+                            메뉴 커스터마이징 및 교육 지원.
+                        </p>
+                        <div class="b2b-visual">
+                            <img 
+                                src="https://media2.sanbangjeju.com/CJ프레쉬웨이SNS.png" 
+                                alt="B2B 기업급식 시스템"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="b2b-cta">
+                            <a href="#contact" class="b2b-cta-btn">기업·단체 협업 문의하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 6: 산방식당 단 하나의 HMR -->
+    <section class="hmr-section" id="hmr">
+        <div class="hmr-container">
+            <!-- 섹션 헤더 -->
+            <div class="hmr-header">
+                <h2 class="hmr-title">산방식당 비빔밀냉면</h2>
+                <h3 class="hmr-slogan">
+                    제주의 반세기, 당신의 식탁으로 –<br class="desktop-break">
+                    육수와 비빔장 동봉으로 두 가지 맛을 즐기세요
+                </h3>
+            </div>
+
+            <!-- Hero Visual: 제품 이미지 -->
+            <div class="hmr-visual">
+                <div class="hmr-product-images">
+                    <div class="hmr-product-image-wrapper">
+                        <img 
+                            src="https://media.sanbangjeju.com/%EB%8B%A8%ED%92%88%20%EC%A0%95%EB%A9%B4%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%A0%9C%EC%A3%BC%EC%82%B0%EB%B0%A9%EC%8B%9D%EB%8B%B9%20%EB%B9%84%EB%B9%94%EB%B0%80%EB%83%89%EB%A9%B4%20806g%202%EC%9D%B8%EB%B6%84%20(1).png" 
+                            alt="산방식당 비빔밀냉면 제품 패키지"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="hmr-product-image-wrapper">
+                        <img 
+                            src="https://media.sanbangjeju.com/13_%E1%84%8E%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%B72.png" 
+                            alt="산방식당 비빔밀냉면 조리 완성샷"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- 본문: 프리미엄 채널 -->
+            <div class="hmr-content">
+                <p class="hmr-description">
+                    프리미엄 온라인 식료품 플랫폼인 <strong>마켓컬리</strong>, 또한 <strong>쿠팡</strong>도,<br class="desktop-break">
+                    미국 시장에서는 <strong>울타리몰</strong>을 통해 산방식당의 맛을 널리 알리고 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 7: 응원의 메시지 -->
+    <section class="encouragement-section" id="encouragement">
+        <div class="encouragement-container">
+            <!-- 섹션 헤더 -->
+            <div class="encouragement-header">
+                <h2 class="encouragement-title">당신의 브랜드를 응원합니다.</h2>
+            </div>
+
+            <!-- GIF 시리즈 -->
+            <div class="encouragement-gif-grid">
+                <div class="encouragement-gif-item">
+                    <img 
+                        src="https://media.sanbangjeju.com/%EC%A4%84%EC%84%9C%EA%B8%B0%20%EB%AA%A8%EC%8A%AC%ED%8F%AC2.gif" 
+                        alt="산방식당 모슬포 본점 줄서는 모습"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="encouragement-gif-item">
+                    <img 
+                        src="https://media2.sanbangjeju.com/%EC%A4%84%EC%84%9C%EA%B8%B0%20%EC%A0%9C%EC%A3%BC%EC%A0%90.gif" 
+                        alt="산방식당 제주점 줄서는 모습"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="encouragement-gif-item">
+                    <img 
+                        src="https://media.sanbangjeju.com/18_%EC%A4%84%EC%84%9C%EA%B8%B03.gif" 
+                        alt="산방식당 상공회의소점 줄서는 모습"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+
+            <!-- 응원 메시지 이미지 (산방산 풍경 이미지로 교체) -->
+            <div class="encouragement-message">
+                <img 
+                    src="https://media2.sanbangjeju.com/yunjihwan_94747_Image_of_Sanbangsan_Mountain_in_Jeju_Island_w_3d0a8f85-7e85-4747-b1cc-05a952a33959_1.png" 
+                    alt="제주 산방산 풍경 이미지"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA 버튼 -->
+    <a href="#contact" class="floating-cta" aria-label="파트너십 문의" style="font-family:'EB Garamond', 'Noto Serif KR', serif;">
+        <span>파트너십 문의</span>
+    </a>
+
+    <!-- 문의 섹션 -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-title">파트너십 문의</h2>
+                <p class="contact-subtitle">간단한 정보를 입력해주시면 빠르게 연락드리겠습니다.</p>
+            </div>
+            
+            <!-- 구글 폼 임베드 -->
+            <div class="google-form-wrapper">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfK4leyAkl_X1dJWKrk5u35qa5QFXw_vF91iQuH6sp1PKqeqw/viewform?embedded=true" 
+                    width="100%" 
+                    height="800" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="google-form-iframe"
+                >
+                    로드 중...
+                </iframe>
+            </div>
+            
+            <!-- 또는 구글 폼으로 이동하는 버튼만 사용하려면 아래 주석을 해제하고 위 iframe을 제거하세요 -->
+            <!-- 
+            <div class="contact-form-button">
+                <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" class="form-submit-btn">
+                    구글 폼으로 문의하기
+                </a>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- 회사 정보 -->
+                <div class="footer-section">
+                    <h3 class="footer-title">산방에프앤비 주식회사</h3>
+                    <p class="footer-info">사업자등록번호: 788-87-01449</p>
+                    <p class="footer-info">대표: 김형섭</p>
+                </div>
+
+                <!-- 매장 정보 -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">산방식당 본점</h4>
+                    <p class="footer-info">제주 서귀포시 대정읍 하모이삼로 62</p>
+                    
+                    <h4 class="footer-subtitle" style="margin-top: 1.5rem;">산방식당 제주점</h4>
+                    <p class="footer-info">제주 제주시 구남로8길 10-5</p>
+                </div>
+
+                <!-- 문의 -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">문의</h4>
+                    <p class="footer-info">
+                        <a href="mailto:contact@jejusanbang.com" class="footer-link">contact@jejusanbang.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 저작권 -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 산방에프앤비 주식회사. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
